@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Page</title>
+	<style>
+		body {
+			background-image: url('https://wallpaperaccess.com/full/1971376.jpg');
+			background-size: cover;
+            height: 100%;
+            background-position: center;
+            background-size: 1000px;
+            margin-top: 0%;
+           
+		}
+        
+            .left{
+                position: absolute;
+                 left: 34px;
+                 top: 20px;
+            font-family: cursive;
+            font-weight: 1000;
+            font-size: 20px;
+            color: #3874b8;
+                
+        display: inline-block;
+            }
+            .mid{
+                margin-top: 1px;
+                line-height: 30px;
+                margin: 0;
+                background-color:black;
+                padding-left: 33%;
+                padding-right: 25%;
+                
+                
+                position: absolute;
+                display: inline-block;
+                width: 98%;
+                
+
+
+
+            }
+            .block{
+                margin: 10px ;
+                border: 2px solid grey;
+                border-radius: 2px;
+                background-color: grey;
+                margin-left: 40px;
+                margin-top: 5px;
+                
+            }
+            
+
+            .navbar{
+                margin: 0%;
+
+                display: inline;
+            }
+            .navbar li{
+                
+                display: inline-flex;
+            }
+            .navbar li a{
+                color: white;
+                text-decoration: none;
+                padding: 15px 20px;
+                font-size: 15px;
+            }
+            .navbar li a:hover{
+                color: blue;
+                background-color: yellow;
+            }
+            .navbar li a:visited{
+                color: green;
+            }
+		.about-me {
+			background-color: #F9C80E;
+            margin-top: 100px;
+            margin-bottom: 100px;
+			
+			background-size: cover;
+			background-position: center;
+			color: #3874b8;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+			padding: 100px;
+		}
+		.my-skills {
+			background-color: #E84A5F;
+			
+            margin-bottom: 200px;
+            
+			background-size: cover;
+			background-position: center;
+			color: #FFFFFF;
+			padding: 50px;
+		}
+		.contact-me {
+			background-color: #1B998B;
+			
+			background-size: cover;
+			background-position: center;
+			color: #FFFFFF;
+			padding: 50px;
+		}
+        .head{
+            text-align: center;
+            text-shadow: none;
+            text-transform: capitalize;
+            font-size: 40px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+        .social-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .social-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .social-card a {
+            text-decoration: none;
+            color: #1B998B;
+            font-size: 20px;
+        }
+        
+        .social-card a:hover {
+            color: #E84A5F;
+        }
+
+        .card-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 20px auto;
+	max-width: 800px;
+}
+
+.card {
+	background-color: #fff;
+	padding: 20px;
+	margin: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+
+.card a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+}
+
+.card img {
+	height: 80px;
+	margin-bottom: 10px;
+}
+
+.card h3 {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+
+.skill-cards {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        
+        .skill-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            width: 30%;
+            text-align: center;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .skill-card a {
+            text-decoration: none;
+            color: #1B998B;
+            font-size: 20px;
+        }
+        
+        .skill-card a:hover {
+            color: #E84A5F;
+        }
+
+        .scard-container {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 2px auto;
+	
+}
+
+.scard {
+	background-color: #fff;
+	padding: 20px;
+	margin: 10px;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+.scard:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
+}
+
+.scard a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	color: #000;
+}
+
+.scard img {
+	height: 80px;
+	margin-bottom: 10px;
+}
+
+.scard h3 {
+	font-size: 18px;
+	text-transform: uppercase;
+}
+.intro{
+    font-size: 100px;
+    margin-top: 100px;
+    word-spacing: normal;
+    margin-top: 100px;
+    
+  background-color: red;
+  animation-name: example;
+  animation-duration: 40s;
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+
+
+.contact-form {
+  max-width: 400px;
+  margin-left: 30%;
+  
+  padding: 50px;
+  background-color: #5591bc;
+
+  border-radius: 2px;
+  border: #010d05;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.contact-form button {
+  margin-left: 150px;
+  background-color: #4caf50;
+  color: #010d05;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.contact-form button:hover {
+  background-color: #ba8d2e;
+}
+.contact-form button::after{
+  background-color: rosybrown;
+}
+.contact-form input:focus{
+  padding: auto;
+}
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.contact-form ::-webkit-input-placeholder {
+  color: #cf2323;
+}
+
+.contact-form ::-moz-placeholder {
+  color: #692e2e;
+}
+
+.contact-form :-ms-input-placeholder {
+  color: #6b3636;
+}
+
+.contact-form :-moz-placeholder {
+  color: #c51d1d;
+}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="head">WELCOME</div>
+		<div class="mid">
+			<div class="left">
+				<a href="https://www.linkedin.com/in/arya-mukherjee-8582b3225/" target="_blank"> A.M.</a>
+			</div>
+			<ul class="navbar">
+				<li><div class="block"><a href="#about-me">About Me</a></div></li>
+				<li><div class="block"><a href="#my-skills">My Skills</a></div></li>
+				<li><div class="block"><a href="#contact-me">Contact Me</a></div></li>
+			</ul>
+		</div>
+	</header>
+
+	<main>
+        <div class ="intro">
+            HI
+             <br>   THIS IS 
+                ARYA MUKHERJEE
+        </div>
+		<section id="about-me" class="about-me">
+			<h2>About Me</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, massa sed venenatis ullamcorper, elit elit tincidunt lectus, at vestibulum libero arcu vel odio.</p>
+		</section>
+
+		<section id ="my-skills"   class="skills-section">
+            <h3>MY SKILLS</h3>
+            <div class="scard-container">
+              <div class="scard">
+                <a href=""><img src="https://img.icons8.com/color/96/000000/python--v1.png" alt="Python">PYTHON</a>
+              </div>
+              <div class="scard">
+                <a href=""><img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo--v1.png" alt="Java">JAVA</a>
+              </div>
+              <div class="scard">
+                <a href=""><img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" alt="C/C++">C/C++</a>
+              </div>
+              <div class="scard">
+                <a href=""><img src="data:image/png;base64,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" alt="R">R</a>
+              </div>
+            
+              <div class="scard">
+                <a href=""><img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML">HTML</a>
+              </div>
+              <div class="scard">
+                <a href=""><img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS">CSS</a>
+              </div>
+              
+              <div class="scard">
+                <a href=""><img src="https://img.icons8.com/fluency/96/000000/figma.png" alt="Figma">FIGMA</a>
+              </div>
+              <div class="scard">
+                <a href=""><img src="https://img.icons8.com/color/96/000000/adobe-after-effects.png" alt="Adobe After Effects">ADOBE AE</a>
+              </div>
+            </div>
+          </section>
+          
+
+        <section id="contact-me" class="contact-me">
+            <h2>Contact Me</h2>
+            <p>You can reach me at:</p>
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/96/000000/facebook-new.png"/>
+                        <h3>Facebook</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/96/000000/instagram-new.png"/>
+                        <h3>Instagram</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="https://img.icons8.com/material-outlined/96/000000/twitter.png"/>
+                        <h3>Twitter</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+       
+        <h1>Contact Us</h1>
+  <div class="contact-form">
+    <form >
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+        
+	</main>
+</body>
+
+</html>
