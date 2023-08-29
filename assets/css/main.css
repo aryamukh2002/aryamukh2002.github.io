@@ -25,6 +25,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+	
 body {
 	line-height: 1;
 }
@@ -37,6 +38,39 @@ blockquote, q {
 	quotes: none;
 }
 
+.sidebar {
+	display: inline-block;
+	text-align: justify;
+    position: fixed;
+    top: -100%; /* Initially hidden above the viewport */
+    left: 0;
+    width: 100%;
+   
+   
+    color: #fff;
+    transition: top 0.3s ease-in-out; /* Use 'top' for the transition */
+}
+
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color:transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #1B998B;
+    border-radius: 25px;
+  }
+ 
+.typewrite{
+	font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 2rem;
+}
 .my-skills {
 	background-color: #E84A5F;
 	
@@ -2572,7 +2606,7 @@ input, select, textarea {
 			}
 
 			.image.main:first-child {
-				margin-top: 0;
+				margin-top: 10rem;
 			}
 
 		.image.fill {
@@ -3691,7 +3725,7 @@ input, select, textarea {
 					}
 
 						#wrapper > section > .content > section:first-child {
-							margin-top: 0;
+							margin-top: 5;
 						}
 
 						#wrapper > section > .content > section > header {
